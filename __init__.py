@@ -13,8 +13,6 @@ class Account(object):
             summ += int(self.accnum[i]) * int(mask[i])
             print "Summ = %s", % (summ)
 
-
-
 acc1 = Account("40702810100000000010")
 print acc1.accnum
 
