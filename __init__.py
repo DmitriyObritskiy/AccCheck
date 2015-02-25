@@ -41,4 +41,5 @@ print("key", acc1.key)
 print("currency", acc1.currency)
 print("rkcnum", acc1.rkcnum)
 print("dict B lat", acc1.dict_cl_acc["Â"])
+
 acc1.calcacckey()
