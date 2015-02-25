@@ -30,16 +30,18 @@ class Account(object):
         for i in range(len(self.normaccnum)):
             # print self.accnum[i], mask[i], str(int(self.accnum[i]) * int(mask[i]))
             summ += int(self.normaccnum[i]) * int(mask[i])
-        print("Summ : {0}".format(str(summ)))
+        return str(int(str(summ)[-1:])*3)
 
 
 acc1 = Account("40702Å99700000000010", "044579203")
-print("accnum ", acc1.accnum)
-print("normaccnum", acc1.normaccnum)
-print("bic", acc1.bic)
-print("key", acc1.key)
-print("currency", acc1.currency)
-print("rkcnum", acc1.rkcnum)
-print("dict B lat", acc1.dict_cl_acc["Â"])
 
-acc1.calcacckey()
+print("==================================")
+print("accnum       ", acc1.accnum)
+print("normaccnum", acc1.normaccnum)
+print("bic                     ", acc1.bic)
+print("key                             ", acc1.key)
+print("currency                    ", acc1.currency, "-", acc1.dict_cl_acc[acc1.currency])
+print("rkcnum                        ", acc1.rkcnum)
+print("==================================")
+
+print (acc1.calcacckey())
