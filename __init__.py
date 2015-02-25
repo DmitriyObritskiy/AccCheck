@@ -33,7 +33,7 @@ class Account(object):
         return str(int(str(summ)[-1:])*3)
 
 
-acc1 = Account("40702Å99700000000010", "044579203")
+acc1 = Account("40702810900000000001", "044579203")
 
 print("==================================")
 print("accnum       ", acc1.accnum)
@@ -44,4 +44,4 @@ print("currency                    ", acc1.currency, "-", acc1.dict_cl_acc[acc1.
 print("rkcnum                        ", acc1.rkcnum)
 print("==================================")
 
-print (acc1.calcacckey())
+print (acc1.calcacckey)
